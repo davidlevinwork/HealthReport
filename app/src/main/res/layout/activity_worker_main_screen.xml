@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkerMainScreen">
+
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/student_list_button"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/worker_button"
+        android:text="התנתק"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/health_student_list_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="315dp"
+        android:background="@drawable/shape_worker_button"
+        android:text="רשימת תלמידים"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/student_list_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/health_student_list_button"
+        android:layout_alignStart="@+id/health_student_list_button"
+        android:layout_below="@+id/health_student_list_button"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/shape_worker_button"
+        android:text="עדכון רשימת תלמידים"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/logoHomeScreen"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="67dp"
+        android:src="@drawable/newlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>

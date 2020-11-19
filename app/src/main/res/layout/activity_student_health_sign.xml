@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentSign">
+
+    <ImageView
+        android:id="@+id/logoHomeScreen"
+        android:src="@drawable/newlogo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="טופס הצהרת בריאות"
+        android:layout_below="@+id/logoHomeScreen"
+        android:layout_marginTop="1dp"
+        android:textSize="24sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:text="אני מצהיר/ה כי:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/ques1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="33dp"
+        android:text="1. מדדתי חום לילדי/ילדתי ונמצא כי חום גופו/ה מתחת ל-38 מעלות צלזיוס."
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/quest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ques1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:text="2. ילדי/ילדתי לא משתעל/ת ואין לו/לה קשיים בנשימה."
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/quest2"
+        android:layout_marginTop="23dp"
+        android:text="3. למיטב ידיעתי ילדי/ילדתי לא היה/הייתה במגע קרוב עם חולה בשבועיים האחרונים."
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/parent_name_edit_text"
+        android:layout_width="330dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="שם מלא"
+        android:inputType="textPersonName"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp" />
+
+    <EditText
+        android:id="@+id/parentID_edit_text"
+        android:layout_width="330dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/parent_name_edit_text"
+        android:hint="תעודת זהות"
+        android:background="@drawable/edit_text_box"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/parent_signature_edit_text"
+        android:layout_width="330dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/parentID_edit_text"
+        android:hint="חתימה"
+        android:background="@drawable/edit_text_box"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/parent_signature_edit_text"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_login_button"
+        android:text="שלח טופס"/>
+
+</RelativeLayout>

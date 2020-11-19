@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_weight="33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/first_name_edit_text"/>
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_weight="33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/last_name_edit_text"/>
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_weight="33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#3F51B5"
+        android:id="@+id/health_signature_edit_text"/>
+
+</LinearLayout>
+

@@ -1,0 +1,5 @@
+include ':app'
+include ':BaseGameUtils'
+include ':squarecamera'
+include ':volley'
+rootProject.name = "APP"

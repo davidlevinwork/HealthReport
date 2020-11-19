@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/login_register_logo"/>
+
+    <LinearLayout
+        android:id="@+id/box_login"
+        android:layout_below="@+id/photo"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/shadow_login"
+        android:layout_height="365dp"
+        android:paddingTop="70dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/mail_logo"
+            android:hint="כתובת מייל"/>
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/key_logo"
+            android:hint="סיסמה"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/repassword_edit_text"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/key_logo"
+            android:hint="סיסמה"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/terms_of_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="בהקשה על הרשמה, את/ה מסכים לתנאי השימוש"
+            android:gravity="right">
+        </TextView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/box_login"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/shape_worker_button"
+        android:text="הרשמה"/>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/box_login"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/register2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="כבר יש לך חשבון?"/>
+        <TextView
+            android:id="@+id/login_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/colorPink"
+            android:textSize="20sp"
+            android:text="התחבר"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

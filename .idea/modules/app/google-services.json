@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "403245952254",
+    "firebase_url": "https://health-report-3140.firebaseio.com",
+    "project_id": "health-report-3140",
+    "storage_bucket": "health-report-3140.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403245952254:android:767fd927cb45c3767a09af",
+        "android_client_info": {
+          "package_name": "com.davidlevin40.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403245952254-dqic09osbatrf0sstc7afqt3ub1uvm5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.davidlevin40.app",
+            "certificate_hash": "fe7b9761e52060aa6680dcd6ac59f6ec8564585b"
+          }
+        },
+        {
+          "client_id": "403245952254-k52tte7vnn25i1pda5j5o7fddfkgiqkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWYfBBBXABNglsokbnq058WyWrXkvy8lw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403245952254-k52tte7vnn25i1pda5j5o7fddfkgiqkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

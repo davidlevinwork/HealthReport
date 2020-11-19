@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/workers_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/welcome2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_worker_button"
+        android:text="עובדי הוראה"/>
+
+    <View
+        android:layout_width="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/workers_button"
+        android:background="#FF635F5F">
+    </View>
+
+    <View
+        android:layout_width="140dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/workers_button"
+        android:background="#FF635F5F">
+    </View>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/workers_button"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF635F5F"
+        android:text="או"/>
+
+    <TextView
+        android:id="@+id/welcome1"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/logoHomeScreen"
+        android:layout_marginTop="-15dp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="ברוכים הבאים!">
+    </TextView>
+
+    <TextView
+        android:id="@+id/welcome2"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/welcome1"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="לחצו כדי להמשיך">
+    </TextView>
+
+    <Button
+        android:id="@+id/students_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/workers_button"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape_login_button"
+        android:text="הורי התלמיד/ה"/>
+
+
+    <ImageView
+        android:id="@+id/logoHomeScreen"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/newlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

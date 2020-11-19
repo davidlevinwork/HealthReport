@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkerMain">
+
+    <ImageView
+        android:id="@+id/logo_pic"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/newlogo" />
+
+    <TextView
+        android:id="@+id/addingTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignEnd="@+id/studentName"
+        android:layout_alignRight="@+id/studentName"
+        android:layout_below="@+id/schoolName"
+        android:layout_marginTop="1dp"
+        android:text="הוספת תלמיד חדש למערכת"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/schoolName"
+        android:layout_width="330dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="45dp"
+        android:hint="שם המוסד"
+        android:background="@drawable/edit_text_box_purple"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/logo_pic"
+        android:inputType="textPersonName"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"/>
+
+    <EditText
+        android:id="@+id/studentName"
+        android:layout_width="330dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/addingTextView"
+        android:background="@drawable/edit_text_box_purple"
+        android:layout_margin="10dp"
+        android:hint="שם פרטי"
+        android:inputType="textPersonName"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"/>
+
+
+
+    <EditText
+        android:id="@+id/studentLastName"
+        android:layout_width="330dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:hint="שם משפחה"
+        android:background="@drawable/edit_text_box_purple"
+        android:layout_below="@+id/studentName"
+        android:inputType="textPersonName"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"/>
+
+
+    <EditText
+        android:id="@+id/studentID"
+        android:layout_width="330dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_box_purple"
+        android:hint="תעודת זהות"
+        android:layout_below="@+id/studentLastName"
+        android:inputType="number"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp" />
+
+
+    <Button
+        android:id="@+id/adding_student_button"
+        android:layout_below="@+id/studentID"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/worker_button"
+        android:text="הוספת תלמיד"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/studentID" />
+
+    <TextView
+        android:id="@+id/removeTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignEnd="@+id/studentName"
+        android:layout_alignRight="@+id/studentName"
+        android:layout_below="@+id/adding_student_button"
+        android:layout_marginTop="20dp"
+        android:text="מחיקת תלמיד קיים מהמערכת"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/DataBaseID"
+        android:layout_below="@+id/removeTextView"
+        android:layout_width="330dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_box_purple"
+        android:hint="תעודת זהות"
+        android:inputType="number"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp" />/>
+
+
+
+    <Button
+        android:id="@+id/deleting_student_button"
+        android:layout_below="@+id/DataBaseID"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/worker_button"
+        android:text="מחיקת תלמיד"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/studentID" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/set"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_below="@id/deleting_student_button"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/button_viewAll"
+            android:layout_below="@+id/set"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_centerInParent="true"
+            android:layout_height="45dp"
+            android:textStyle="bold"
+            android:text="רשימת תלמידים מלאה"
+            android:background="@drawable/shape_worker_button"
+            android:layout_centerVertical="true"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

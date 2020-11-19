@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentMain">
+
+    <ImageView
+        android:id="@+id/logoHomeScreen"
+        android:src="@drawable/newlogo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/covid_title_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/logoHomeScreen"
+        android:layout_centerHorizontal="true"
+        android:text="הצהרת בריאות יומית"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/parent_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/covid_title_edit_text"
+        android:layout_centerHorizontal="true"
+        android:text="ימולא על ידי ההורה"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/covid_title_edit_text" />
+
+
+    <TextView
+        android:id="@+id/school_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignEnd="@+id/studentName"
+        android:layout_alignRight="@+id/studentName"
+        android:layout_below="@+id/parent_text_view"
+        android:layout_marginTop="20dp"
+        android:text="שם המוסד"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/covid_title_edit_text" />
+
+    <EditText
+        android:id="@+id/schoolName"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="שם המוסד"
+        android:layout_below="@+id/school_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/edit_text_box"/>
+
+
+    <EditText
+        android:id="@+id/studentName"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView5"
+        android:hint="שם פרטי"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/edit_text_box" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignEnd="@+id/studentName"
+        android:layout_alignRight="@+id/studentName"
+        android:layout_below="@+id/schoolName"
+        android:layout_marginTop="15dp"
+        android:text="פרטי התלמיד/ה"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/covid_title_edit_text" />
+
+    <EditText
+        android:id="@+id/studentLastName"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/studentName"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="שם משפחה"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/studentID"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/studentLastName"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="תעודת זהות"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/signButtonStudent"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/studentID"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_login_button"
+        android:text="הבא"/>
+
+
+</RelativeLayout>
