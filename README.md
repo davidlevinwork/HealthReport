@@ -25,10 +25,10 @@ This app is especially useful due to the COVID epidemic.
 ## Compile and run
 To download and set up 'HealthReport' application in Android Studio, follow this steps:
 
-1. Download HealthReport from GitHub:
-	You can use one of the following two options-
-		* "Download ZIP" button 
-		* CMD: git clone https://github.com/davidlevinwork/HealthReport.git
+1. Download HealthReport from GitHub: <br/>
+	You can use one of the following two options- <br/>
+		* "Download ZIP" button <br/>
+		* CMD: git clone https://github.com/davidlevinwork/HealthReport.git <br/>
 2. Import the project in Android studio:
 	2.1. Click **File** -> **New** -> **Import project**
 	2.2. Navigate to the directory where you downloaded the HealthReport repository > (usually: Users\*current_user*\HealthReport)
