@@ -27,14 +27,15 @@ To download and set up 'HealthReport' application in Android Studio, follow this
 
 **1.** Download HealthReport from GitHub: 
  * You can use one of the following two options- <br/>
-   * "Download ZIP" button <br/>
-   * CMD: git clone https://github.com/davidlevinwork/HealthReport.git <br/>
-**2.** Import the project in Android studio: <br/>
+   * "Download ZIP" button 
+   * CMD: git clone https://github.com/davidlevinwork/HealthReport.git
+2. Import the project in Android studio: <br/>
  **2.1.** Click **File** -> **New** -> **Import project** <br/>
  **2.2.** Navigate to the directory where you downloaded the HealthReport repository *(usually: Users\current_user\HealthReport)* <br/>
  **2.3.** Select the "HealthReport" folder and click ok <br/>
- **2.4.** Android Studio may prompt you to install the latest version of various Android libraries.  <br/>
-  Click "Install Repository and sync project" and follow the instructions. <br/> <br/>
+ **2.4.** Android Studio may prompt you to install the latest version of various Android libraries. <br/>
+ Click "Install Repository and sync project" and follow the instructions.
+
 **3.** Connect your device over USB. You should see a notification that says ‘USB Debugging Enabled’ <br/> <br/>
 **4.** **Run** the app either by clicking the green arrow in the bar, or go to Run > Run 'app' <br/>
 
