@@ -12,9 +12,9 @@
 ##### You can follow the daily signature update:
   - In the picture below you can see that the 'signatureStat' of the two first students is 'כן'
   - If you try yo view the student list of this institution ("רשימת תלמידים"), you will see that the 'signatureStat' that appears there will be 'לא'
-    (The reason is that it has been a school day, so the system resets all the signatures to be in the initial state - 'לא')
-  - You can enter one of the student details that appear in the student list, and at the end of the process of filling out the health declaration.
-  You will then be able to log in again as "עובד הוראה" and then follow stage 2 above, and the 'signatureStat' of this specific student, will be 'כן' as exepted.
+    (The reason is that the dates are different, so the system resets all the 'signatureStat' to be in the initial state - 'לא')
+  - In order to verify that the change does work, you can enter to "הורי התלמיד", and enter one of the student details that appear in the student list. At the end of the process of filling out the health declaration - you will be able to log in again as "עובד הוראה" and then follow stage 2 above, and the 'signatureStat' of this specific student, will be 'כן' as exepted..
+  
 ____________________________________________
 #### References
 ##### Login details (as "עובד הוראה"): <br />
