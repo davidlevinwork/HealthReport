@@ -24,7 +24,7 @@ This app is especially useful due to the COVID epidemic.
 
 ## Build For Good
 
-You can use Build_For_Good.md
+You can use [Build_For_Good.md](Build_For_Good.md)
 
 ## Compile and run
 To download and set up 'HealthReport' application in Android Studio, follow this steps:
