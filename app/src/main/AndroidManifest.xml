@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/HiddenTitleTheme">
+        <activity android:name=".WorkerOptions" />
+        <activity android:name=".StudentListActivity"></activity>
         <activity android:name=".WorkerMainScreen"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"/>
