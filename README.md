@@ -22,10 +22,6 @@ This app is especially useful due to the COVID epidemic.
 
 *Based on Kotlin, Java and Firebase platform as a database*
 
-## Build For Good
-
-You can use [Build_For_Good.md](Build_For_Good.md)
-
 ## Compile and run
 To download and set up 'HealthReport' application in Android Studio, follow this steps:
 
